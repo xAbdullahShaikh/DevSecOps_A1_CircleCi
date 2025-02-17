@@ -40,8 +40,8 @@ jobs:
           name: Push Docker Image
           command: |
             echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-            docker push your-dockerhub-username/circleci-image:latest
-            docker push your-dockerhub-username/circleci-image:v1
+            docker push codenameab/circleci-image:latest
+            docker push codenameab/circleci-image:v1
 
 workflows:
   version: 2
