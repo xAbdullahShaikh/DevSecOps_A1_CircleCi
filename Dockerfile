@@ -10,10 +10,10 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy the rest of the app
-COPY . .
+COPY . /app
 
 # Expose the application port
-EXPOSE 5000
+
 
 # Command to run the application
-CMD ["python", "app.py"]
+CMD ["pytest"]
